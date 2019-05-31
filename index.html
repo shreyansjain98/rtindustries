@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140125075-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-140125075-1');
+	</script>
+	
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/animations.css"/>
+  	<link rel="stylesheet" type="text/css" href="stylesheets/hover.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css"/>
+	
+	<link rel="shortcut icon" href="img/rticon.ico" type="image/x-icon">
+	<link rel="icon" href="img/rticon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet"> 
+
+	<title>
+		RT Industries | Home
+	</title>
+
+	<meta name="description" content="RT Industries. Traders and dealers in top quality parts like nuts, bolts, screws, washers,thread rods. We import and supply our product from overseas.">
+	<meta name="keywords" content="Tools, Screws, Nuts, Bolts, Washers, Theaded Rods, Buy screw, buy nuts, buy bolts, RT Industries, RT">
+</head>
+<body>
+	<div class="nbcontainer">
+		<div class="logo nbpart">
+			<img class="logopic" src="img/rtlogo.png">
+		</div>
+		<div class="menu nbpart">
+			<ul class="menulist">
+				<a href="index.html">
+					<li class="opt hvr-glow">
+						HOME
+					</li>
+				</a>
+				<a href="about.html">			
+					<li class="opt hvr-glow">
+						ABOUT US
+					</li>
+				</a>
+				<a href="products.html">
+					<li class="opt hvr-glow">
+						PRODUCTS
+					</li>
+				</a>
+				<a href="contact.html">
+					<li class="opt hvr-glow">
+						CONTACT US
+					</li>
+				</a>
+				<li class="togbut hvr-glow" id=togbut>
+					<i id="menubutton" class="fa fa-bars" aria-hidden="true"></i>
+
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="resmenu">
+		<ul class="resmenulist">
+			<a href="index.html">
+				<li class="resopt hvr-underline-from-center">
+					HOME
+				</li>
+			</a>
+			<a href="about.html">
+				<li class="resopt hvr-underline-from-center">
+					ABOUT US
+				</li>
+			</a>
+			<a href="products.html">
+				<li class="resopt hvr-underline-from-center">
+					PRODUCTS
+				</li>
+			</a>
+			<a href="contact.html">
+				<li class="resopt hvr-underline-from-center">
+					CONTACT US
+				</li>
+			</a>
+		</ul>
+	</div>
+	<div class="body2"> 
+		<div class="leftcol">
+			<p class="animated zoomIn landinghead">
+				RT INDUSTRIES
+			</p>
+			<hr class="hrline">
+			<p class="animated zoomIn landingtext">
+				One Stop Solution for Nuts, Bolts, Screws, Washers and Thread Rods
+			</p>
+		</div>
+		<div class="rightcol">
+			<p class="animated zoomIn righthead">
+				Browse Our Products
+			</p>
+			<hr class="hrline">
+			<ul class="productlist">
+				<a href="products.html#nuts">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/nut.png">
+					</div>
+					<div class="prodname">
+						NUTS
+					</div>
+				</li>
+				</a>
+				<a href="products.html#bolts">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/bolt.png">
+					</div>
+					<div class="prodname">
+						BOLTS
+					</div>
+				</li>
+				</a>
+				<a href="products.html#screws">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/screw.png">
+					</div>
+					<div class="prodname">
+						SCREWS
+					</div>
+				</li>
+				</a>
+				<a href="products.html#washers">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/washer.png">
+					</div>
+					<div class="prodname">
+						WASHERS
+					</div>
+				</li>
+				</a>
+				<a href="products.html#threadrods">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/thread rod.png">
+					</div>
+					<div class="prodname">
+						THREAD RODS
+					</div>
+				</li>
+				</a>
+				<a href="products.html">
+				<li class="prod">
+					<div class="prodimg">
+						<img src="img/prod.png">
+					</div>
+					<div class="prodname">
+						ALL PRODUCTS
+					</div>
+				</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+<script>
+	document.getElementById("togbut").onclick=function() {
+	var element=document.getElementById("resmenu");
+	if (document.getElementById("resmenu").classList.contains('dropdownanim')){
+		element.classList.remove("dropdownanim");
+		element.classList.add("dropupanim");
+		console.log("Not found");
+		console.log(element.classList)
+	}
+	// element.classList.remove("dropupanim"); 
+	else{
+		element.classList.add("dropdownanim");
+		element.classList.remove("dropupanim");
+		console.log("Found");
+		console.log(element.classList)
+	}
+	}
+	
+
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5cd54f172846b90c57add56f/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
+
+

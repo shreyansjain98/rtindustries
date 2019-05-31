@@ -1,0 +1,383 @@
+/* line 1, ../sass/nb.scss */
+html{
+  height:100%;
+}
+body {
+  height:100%;
+  margin: 0;
+  -moz-user-select: none;
+}
+
+a:link {
+    color: transparent;
+}
+a:visited {
+    color: transparent;
+}
+a:hover {
+    color: transparent;
+}
+a:active {
+    color:transparent;
+}
+
+.nbcontainer {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*color: white;*/
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 10px;
+  /*width: 90%;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:white;
+}
+@media only screen and (max-width: 768px) {
+  /* line 5, ../sass/nb.scss */
+  .nbcontainer {
+    width: 100%;
+    padding: 0;}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  }
+}
+
+/* line 25, ../sass/nb.scss */
+.togbut {
+  display: none;
+  padding:0px 10px;
+  cursor: pointer;
+}
+#menubutton{
+    color:black;
+    font-size:30px;
+}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  height: 110px;
+}
+
+/* line 33, ../sass/nb.scss */
+.nbpart {
+  height: 80px;
+  display: inline-block;
+  width: 49.5%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 33, ../sass/nb.scss */
+  .nbpart {
+    width: 49%;
+  }
+}
+
+/* line 54, ../sass/nb.scss */
+.menulist {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  line-height: 0.5;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 68, ../sass/nb.scss */
+  .menulist .togbut {
+    display: block;
+  }
+  /* line 71, ../sass/nb.scss */
+  .menulist .opt {
+    display: none;
+  }
+  .logopic{
+    height:85px;
+  }
+  .menulist{
+    line-height:3.5;
+  }
+}
+
+/* line 76, ../sass/nb.scss */
+.opt {
+  color:black;
+  padding:20px;
+  display: inline-block;
+  cursor:pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .opt{
+    padding:8px;
+  }
+}
+/* line 80, ../sass/nb.scss */
+#resmenu {
+  z-index:1;
+  position: fixed;
+  top: 89px;
+  opacity: 0;
+  width: 0%;
+  margin-left: auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /*color: white;*/
+  padding-top: 30px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 94, ../sass/nb.scss */
+.dropdownanim {
+  animation: dropdown 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropdown {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/* line 117, ../sass/nb.scss */
+.dropupanim {
+  animation: dropup 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropup {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+}
+/* line 140, ../sass/nb.scss */
+.resmenulist {
+  font-family: 'Fjalla One', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 145, ../sass/nb.scss */
+.resmenulist li {
+  display:block;
+  padding: 20px;
+  font-size:20px;
+  cursor:pointer;
+}
+.resopt{
+  color:black;
+}
+/* line 150, ../sass/nb.scss */
+.xs {
+  color: black;
+}
+
+/* line 154, ../sass/nb.scss */
+.body2 {
+  padding-top: 50px;
+  background-image: url("../img/w2.jpeg");
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  margin-top: 114px;
+  height:100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .body2{
+    margin-top:89px;
+    padding-top:20px;
+    /*height:90%;*/
+  }
+  body{
+    height:auto;
+  }
+  html{
+    height:auto;
+  }
+}
+.leftcol, .rightcol{
+  display:inline-block;
+  /*text-align: center;*/
+  width:44%;
+  padding-left:30px;
+}
+.leftcol{
+  float:left;
+  padding-left:30px;
+  padding-top:70px;
+}
+
+.landinghead, .righthead{
+  z-index: 0;
+  margin:0;
+  font-size:50px;
+  color:white;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.landingtext{
+  z-index: 0;
+  color:white;
+  font-size:20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.prodname{
+  color:white;
+  font-size:20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 1240px) {
+  .landinghead, .righthead{
+  /*margin:0;*/
+  font-size:40px;
+  /*color:white;*/
+  /*font-family: 'Merriweather Sans', sans-serif;*/
+}
+.landingtext{
+  /*color:white;*/
+  font-size:15px;
+  /*font-family: 'Merriweather Sans', sans-serif;*/
+}
+.prodname{
+  /*color:white;*/
+  font-size:15px;
+  /*font-family: 'Merriweather Sans', sans-serif;*/
+}
+
+}
+@media only screen and (max-width: 980px) {
+  .landinghead, .righthead{
+    font-size:30px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .prodname{
+    font-size:12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .leftcol, .rightcol{
+    width:100%;
+    text-align:center;
+  }
+  .prod{
+    margin:0 auto;
+    /*display:block;*/
+  }
+}
+
+.prod{
+  z-index: 0;
+  padding:10px 0;
+  cursor:pointer;
+  border:5px solid transparent;
+  width:40%;
+  display:inline-block;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 768px){
+  .prod{
+    opacity:1;
+  }
+}
+.prod:hover{
+  opacity:1;
+  border:5px solid white;
+}
+.prodname{
+  padding:29px 0;
+  /*font-size:30px;*/
+  /*width:30%;*/
+}
+.prodimg{
+  /*width:30%;*/
+  float:left;
+}
+.prodimg img{
+  height:80px;
+}
+
+@media only screen and (max-width:1040px){
+  .prodimg img{
+    height:50px;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+}
+
+.prodimg, .prodname{
+  display:inline-block;
+  width:49%;
+}
+.productlist{
+  list-style-type: none;
+  padding-left:0;
+}
+.hrline{
+  display:none;
+}
+@media only screen and (max-width: 768px) {
+  .hrline{
+    display:block;
+    width:80px;
+    color:white;
+    margin:0 auto;
+  }
+  .landinghead, .righthead{
+    padding-bottom:20px;
+  }
+  .landingtext{
+    padding-top: 30px;
+  }
+  .leftcol, .rightcol{
+    padding-top: 20px;
+    padding-left: 0;
+    width:100%;
+    text-align:center;
+  }
+  .rightcol{
+    /*padding-top:30px;*/
+  }
+  .prod{
+    width:30%;
+    margin:0 auto;
+    /*display:block;*/
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .prod{
+    width:70%;
+  }
+  .landingtext{
+    width:90%;
+    margin: 0 auto;
+    display:block;
+  }
+}

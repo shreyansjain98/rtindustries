@@ -1,0 +1,378 @@
+/* line 1, ../sass/nb.scss */
+html{
+  height:100%;
+}
+body {
+  height:100%;
+  margin: 0;
+  /*-moz-user-select: none;*/
+}
+
+a:link {
+    color: transparent;
+}
+a:visited {
+    color: transparent;
+}
+a:hover {
+    color: transparent;
+}
+a:active {
+    color:transparent;
+}
+
+.nbcontainer {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:white;
+}
+@media only screen and (max-width: 768px) {
+  /* line 5, ../sass/nb.scss */
+  .nbcontainer {
+    width: 100%;
+    padding: 0;}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  }
+}
+
+/* line 25, ../sass/nb.scss */
+.togbut {
+  display: none;
+  padding:0px 10px;
+  cursor: pointer;
+}
+#menubutton{
+    color:black;
+    font-size:30px;
+}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  height: 110px;
+}
+
+/* line 33, ../sass/nb.scss */
+.nbpart {
+  height: 80px;
+  display: inline-block;
+  width: 49.5%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 33, ../sass/nb.scss */
+  .nbpart {
+    width: 49%;
+  }
+}
+
+/* line 54, ../sass/nb.scss */
+.menulist {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  line-height: 0.5;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 68, ../sass/nb.scss */
+  .menulist .togbut {
+    display: block;
+  }
+  /* line 71, ../sass/nb.scss */
+  .menulist .opt {
+    display: none;
+  }
+  .logopic{
+    height:85px;
+  }
+  .menulist{
+    line-height:3.5;
+  }
+}
+
+/* line 76, ../sass/nb.scss */
+.opt {
+  padding:20px;
+  display: inline-block;
+  cursor:pointer;
+  color:black;
+}
+@media only screen and (max-width: 1000px) {
+  .opt{
+    padding:8px;
+  }
+}
+/* line 80, ../sass/nb.scss */
+#resmenu {
+  position: fixed;
+  top: 89px;
+  opacity: 0;
+  width: 0%;
+  margin-left: auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /*color: white;*/
+  padding-top: 30px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 94, ../sass/nb.scss */
+.dropdownanim {
+  animation: dropdown 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropdown {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/* line 117, ../sass/nb.scss */
+.dropupanim {
+  animation: dropup 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropup {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+}
+/* line 140, ../sass/nb.scss */
+.resmenulist {
+  font-family: 'Fjalla One', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 145, ../sass/nb.scss */
+.resmenulist li {
+  display:block;
+  padding: 20px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.resopt{
+  color:black;
+}
+
+/* line 150, ../sass/nb.scss */
+.xs {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* line 154, ../sass/nb.scss */
+.body2 {
+  padding-top: 50px;
+  background: -webkit-linear-gradient(to left, white, #858585);
+  background: linear-gradient(to bottom, white, #858585);
+  margin-top: 114px;
+  height:100%;
+}
+@media only screen and (max-width:1000px){
+  .body2{
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .body2{
+    margin-top:89px;
+    padding-top:20px;
+    /*height:auto;*/
+  }
+  body{
+    /*height:auto;*/
+  }
+  html{
+    /*height:auto;*/
+  }
+}
+
+.leftcol, .rightcol{
+  display:inline-block;
+  width:44%;
+}
+.rightcol{
+  padding:30px;
+  background-color: transparent;
+  box-shadow:0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:1s;
+}
+.rightcol:hover{
+  background-color: white;
+}
+.leftcol img{
+  height:200px;
+  margin:0 auto;
+  display:block;
+  padding: 10px;
+  border-radius:20px;
+  box-shadow:0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition:1s;
+}
+
+
+.leftcol img:hover{
+  background-color:white;
+}
+
+.righthead{
+  margin:0;
+  font-size:30px;
+  color:black;
+  font-weight:bold;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom:20px;
+}
+.prodname{
+  color:black;
+  font-size:20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0;
+}
+
+@media only screen and (max-width:480px){
+  .prodname{
+    font-size:15px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .leftcol, .rightcol{
+    width:40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .leftcol{
+    display:none;
+  }
+  .rightcol{
+    width:80%;
+    margin:0 auto;
+    display: block;
+    background-color:white;
+  }
+}
+@media only screen and (max-width:480px){
+  .rightcol{
+    width:70%;
+  }
+}
+
+.aboutinfo{
+  width:100%;
+}
+
+
+.contactinfo{
+  padding-top:20px;
+}
+
+.contacttab{
+  width:33%;
+  margin:0 auto;
+  display:inline-block;
+  text-align:center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:20px;
+}
+@media only screen and (max-width:1000px){
+  .contacttab{
+    width:32%
+  }
+}
+
+.contacttab i{
+  font-size: 70px;
+  color:#363636;
+  padding-bottom: 30px;
+}
+
+.contacticon{
+  width:29%;
+  display:inline-block;
+
+}
+
+.contacttext{
+  width:70%;
+  display:inline-block;
+
+}
+.contactinfores{
+
+  width:80%;
+  margin:0 auto;
+  display:none;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:20px;
+}
+.contacttabres{
+  padding:20px;
+}
+.contacttabres i{
+  font-size:50px;
+}
+
+@media only screen and (max-width:768px){
+  .contactinfores{
+    display:block;
+  }
+  .contactinfo{
+    display:none;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .contacttext{
+    font-size:15px;
+  }
+  .contacttabres i{
+    font-size:35px;
+  }
+
+}

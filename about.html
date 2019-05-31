@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/hover.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/about.css"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/animations.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="img/rticon.ico" type="image/x-icon">
+	<link rel="icon" href="img/rticon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+
+	<title>
+		RT Industries | About
+	</title>
+</head>
+<body>
+	<div class="nbcontainer">
+		<div class="logo nbpart">
+			<img class="logopic" src="img/rtlogo.png">
+		</div>
+		<div class="menu nbpart">
+			<ul class="menulist">
+				<a href="index.html">
+					<li class="opt hvr-glow">
+						HOME
+					</li>
+				</a>
+				<a href="about.html">			
+					<li class="opt hvr-glow">
+						ABOUT US
+					</li>
+				</a>
+				<a href="products.html">
+					<li class="opt hvr-glow">
+						PRODUCTS
+					</li>
+				</a>
+				<a href="contact.html">
+					<li class="opt hvr-glow">
+						CONTACT US
+					</li>
+				</a>
+				<li class="togbut hvr-glow" id=togbut>
+					<i id="menubutton" class="fa fa-bars" aria-hidden="true"></i>
+
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="resmenu">
+		<ul class="resmenulist">
+			<a href="index.html">
+				<li class="resopt hvr-underline-from-center">
+					HOME
+				</li>
+			</a>
+			<a href="about.html">
+				<li class="resopt hvr-underline-from-center">
+					ABOUT US
+				</li>
+			</a>
+			<a href="products.html">
+				<li class="resopt hvr-underline-from-center">
+					PRODUCTS
+				</li>
+			</a>
+			<a href="contact.html">
+				<li class="resopt hvr-underline-from-center">
+					CONTACT US
+				</li>
+			</a>
+		</ul>
+	</div>
+	<div class="body2"> 
+		<div class="aboutinfo">
+			<div class="leftcol">
+				<img src="img/rtlogo.png">
+			</div>
+			<div class="rightcol">
+				<p class="righthead">
+					ABOUT US
+				</p>
+				<p class="prodname">
+					We at RT Industries are traders and dealers in top quality parts like nuts, bolts, screws, washers,thread rods. We import and supply our product from overseas. We assure good quality products, best price, on time delivery, and most importantly customer satisfaction.
+				</p>
+			</div>
+		</div>
+		<div class="contactinfo">
+			<div class="contacttab">
+				<i class="material-icons">location_city</i><br>RT Industries<br>68A Guru Nanak Nagar<br>New Delhi-110018
+			</div>
+			<div class="contacttab">
+				<i class="material-icons">contact_phone</i><br>+918076596638<br>+919716002995<br><br>
+			</div>
+			<div class="contacttab">
+				<i class="material-icons">email</i><br>industriesrt08@gmail.com<br><br><br>
+			</div>
+		</div>
+		<div class="contactinfores">
+			<div class="contacttabres">
+				<span class="contacticon"><i class="material-icons">location_city</i></span><span class="contacttext">RT Industries<br>68A Guru Nanak Nagar<br>New Delhi-110018</span>
+			</div>
+			<div class="contacttabres">
+				<span class="contacticon"><i class="material-icons">contact_phone</i></span><span class="contacttext"><!-- <br><br> -->+918076596638<br>+919716002995
+			</div>
+			<div class="contacttabres">
+				<span class="contacticon"><i class="material-icons">email</i></span><span class="contacttext"><!-- <br><br><br> -->info@rtindustries.in
+			</div>
+		</div>
+	</div>
+
+<script>
+	document.getElementById("togbut").onclick=function() {
+	var element=document.getElementById("resmenu");
+	if (document.getElementById("resmenu").classList.contains('dropdownanim')){
+		element.classList.remove("dropdownanim");
+		element.classList.add("dropupanim");
+		console.log("Not found");
+		console.log(element.classList)
+	}
+	// element.classList.remove("dropupanim"); 
+	else{
+		element.classList.add("dropdownanim");
+		element.classList.remove("dropupanim");
+		console.log("Found");
+		console.log(element.classList)
+	}
+	}
+	
+
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,294 @@
+/* line 1, ../sass/nb.scss */
+html{
+  height:100%;
+}
+body {
+  height:100%;
+  margin: 0;
+  /*-moz-user-select: none;*/
+}
+
+a:link {
+    color: transparent;
+}
+a:visited {
+    color: transparent;
+}
+a:hover {
+    color: transparent;
+}
+a:active {
+    color:transparent;
+}
+
+.nbcontainer {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:white;
+}
+@media only screen and (max-width: 768px) {
+  /* line 5, ../sass/nb.scss */
+  .nbcontainer {
+    width: 100%;
+    padding: 0;}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  }
+}
+
+/* line 25, ../sass/nb.scss */
+.togbut {
+  display: none;
+  padding:0px 10px;
+  cursor: pointer;
+}
+#menubutton{
+    color:black;
+    font-size:30px;
+}
+
+/* line 30, ../sass/nb.scss */
+.logopic {
+  padding-left:30px;
+  height: 110px;
+}
+
+/* line 33, ../sass/nb.scss */
+.nbpart {
+  height: 80px;
+  display: inline-block;
+  width: 49.5%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 33, ../sass/nb.scss */
+  .nbpart {
+    width: 49%;
+  }
+}
+
+/* line 54, ../sass/nb.scss */
+.menulist {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  line-height: 0.5;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 68, ../sass/nb.scss */
+  .menulist .togbut {
+    display: block;
+  }
+  /* line 71, ../sass/nb.scss */
+  .menulist .opt {
+    display: none;
+  }
+  .logopic{
+    height:85px;
+  }
+  .menulist{
+    line-height:3.5;
+  }
+}
+
+/* line 76, ../sass/nb.scss */
+.opt {
+  padding:20px;
+  display: inline-block;
+  cursor:pointer;
+  color:black;
+}
+@media only screen and (max-width: 1000px) {
+  .opt{
+    padding:8px;
+  }
+}
+/* line 80, ../sass/nb.scss */
+#resmenu {
+  position: fixed;
+  top: 89px;
+  opacity: 0;
+  width: 0%;
+  margin-left: auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  /*color: white;*/
+  padding-top: 30px;
+  background-color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index:1;
+}
+
+/* line 94, ../sass/nb.scss */
+.dropdownanim {
+  animation: dropdown 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropdown {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/* line 117, ../sass/nb.scss */
+.dropupanim {
+  animation: dropup 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes dropup {
+  from {
+    width: 100%;
+    opacity: 1;
+  }
+  to {
+    width: 0%;
+    opacity: 0;
+  }
+}
+/* line 140, ../sass/nb.scss */
+.resmenulist {
+  font-family: 'Fjalla One', sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 145, ../sass/nb.scss */
+.resmenulist li {
+  display:block;
+  padding: 20px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.resopt{
+  color:black;
+}
+
+/* line 150, ../sass/nb.scss */
+.xs {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* line 154, ../sass/nb.scss */
+.body2 {
+  padding-top: 50px;
+  background: -webkit-linear-gradient(to left, white, #858585);
+  background: linear-gradient(to bottom, white, #858585);
+  margin-top: 114px;
+  padding-bottom: 100px;
+  min-height:100%;
+  height: auto;
+}
+@media only screen and (max-width:1000px){
+  .body2{
+    /*padding-bottom: 50px;*/
+  }
+}
+@media only screen and (max-width: 768px) {
+  .body2{
+    margin-top:89px;
+    padding-top:20px;
+    /*height:auto;*/
+  }
+  body{
+    /*height:auto;*/
+  }
+  html{
+    /*height:auto;*/
+  }
+}
+
+.contacthead{
+  font-size:50px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width:768px){
+  .contacthead{
+    font-size:30px;
+  }
+}
+
+.contactform {
+  background-color:#f6f6f6;
+  color:black;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 50px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Josefin Sans', sans-serif;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 1309, ../sass/style.scss */
+  .contactform {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 1309, ../sass/style.scss */
+  .contactform {
+    width: 75%;
+  }
+}
+/* line 1327, ../sass/style.scss */
+.contactform input[type=text], .contactform select, .contactform textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #06284b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/* line 1338, ../sass/style.scss */
+.contactform input[type=submit] {
+  background-color:#363636;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  z-index:0;
+}
